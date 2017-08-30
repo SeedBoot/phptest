@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
@@ -14,16 +15,31 @@ h1, h2, h3, h4, h5 {
 
 .menu {
     list-style-type: none;
+    padding: 0;
 }
 
 .menu li {
     display: inline-block;
-    padding: 0 0.3em;
+    padding: 0.3em 0.7em;
+    margin: 0.2em;
+    border: 1px solid rgb(10, 10, 10);
+    transition: background 0.25s;
+}
+
+.menu li:hover {
+    background: rgba(84, 147, 222, 0.74);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
 }
 
 main {
     margin: 0 auto;
+    padding: 1em;
     width: 70%;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -32,7 +48,7 @@ main {
 
 /*bottom of the page*/
 footer {
-    margin: 0 auto;
+    margin: 1.5em auto 0;
 }
 
 footer p {
